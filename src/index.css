@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.shadow_brand {
+  box-shadow: 4px 4px 15px 5px #0000004D inset;
+}
+
+@layer base {
+  img {
+    @apply w-full h-full object-cover select-none
+  }
+}
+
+@layer components {
+  .container_sections {
+    @apply w-[90%] max-w-7xl py-20 mx-auto
+  }
+  .sliceBtn {
+    @apply bg-green_secondary rounded-full text-white
+  }
+  .galery {
+    @apply relative overflow-hidden h-44 lg:h-72 text-xl rounded-[2rem]
+  }
+  .galery_img {
+    @apply absolute -z-10 aspect-[157/144]
+  }
+  .galery_content {
+    @apply px-5 py-7 lg:py-9 flex flex-col justify-between h-full
+  }
+  .steps {
+    @apply flex items-center justify-center bg-green_secondary w-14 h-14 rounded-full text-white text-3xl leading-none
+  }
+  .steps_middle {
+    @apply relative outline outline-8 outline-white before:content-[''] before:absolute before:bg-green_primary before:w-2 before:h-2 before:rounded-full before:right-full before:mr-1.5 after:content-[''] after:absolute after:bg-green_primary after:w-2 after:h-2 after:rounded-full after:left-full after:ml-1.5 font-montserrat
+  }
+  .steps_start {
+    @apply relative outline outline-8 outline-white after:content-[''] after:absolute after:bg-green_primary after:w-2 after:h-2 after:rounded-full after:left-full after:ml-2
+  }
+  .steps_end {
+    @apply relative outline outline-8 outline-white before:content-[''] before:absolute before:bg-green_primary before:w-2 before:h-2 before:rounded-full before:right-full before:mr-1.5 font-montserrat
+  }
+  .brands {
+    @apply bg-green_secondary rounded-[2.5rem] px-4 lg:px-3 h-[6.25rem] lg:h-[9.375rem] shadow_brand flex justify-center items-center
+  }
+}
+
+@layer utilities {
+  .hover_links {
+    @apply hover:text-green_primary transition-colors duration-500
+  }
+  .show_lg-flex {
+    @apply hidden lg:flex
+  }
+  .show_lg-block {
+    @apply hidden lg:block
+  }
+}
