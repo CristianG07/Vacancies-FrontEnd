@@ -22,8 +22,44 @@
   z-index: 4;
 }
 
-.thumb::-webkit-slider-thumb,
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color: #D9E3D8;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
 .thumb::-moz-range-thumb {
+  background-color: #D9E3D8;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* Estilos para navegadores de Microsoft (Internet Explorer, Edge) */
+.thumb::-ms-thumb {
+  background-color: #D9E3D8;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* Estilos para navegadores de Opera (Presto) */
+.thumb::-o-range-thumb {
   background-color: #D9E3D8;
   border: none;
   border-radius: 50%;
