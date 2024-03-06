@@ -17,7 +17,7 @@ export default {
         'white': '#FCFFFA'
       },
       backgroundImage: {
-        'hero': "url('./src/assets/img/hero.jpg')"
+        'hero': "url('./src/assets/img/hero.png')"
       },
       fontFamily: {
         'montserrat': ['Montserrat']
