@@ -1,4 +1,5 @@
 // data
+import { Link } from 'react-router-dom'
 import { Links_footer } from '../../components/footer/Links_footer'
 import {
   footer_contact,
@@ -16,9 +17,9 @@ export const Footer = () => {
     <footer className='bg-green_footer font-montserrat text-sm font-medium text-dark_blue'>
       <div className='flex flex-col lg:flex-row container_sections gap-5 py-5 lg:py-20'>
         <div className='grid grid-cols-2 items-center lg:items-start lg:flex lg:flex-col mb-3 gap-7'>
-          <div className='w-28'>
+          <Link to='/' className='w-28'>
             <img src={logo} alt='logo' />
-          </div>
+          </Link>
           <div className='flex gap-5 lg:gap-7'>
             {footer_social.map((social, i) => (
               <a

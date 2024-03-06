@@ -18,7 +18,7 @@ export const Vacancies = () => {
         <Swiper
           modules={[Navigation, Pagination]}
           slidesPerView={2}
-          pagination={true}
+          pagination={{clickable: true}}
           loop={true}
           navigation={{
             nextEl: '.button-next-vacancies',
@@ -40,7 +40,7 @@ export const Vacancies = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className='hidden absolute z-20 top-0 left-0 w-full h-full lg:flex justify-between items-center'>
+        <div className='hidden absolute top-0 left-0 w-full h-full lg:flex justify-between items-center'>
           <button className='button-prev-vacancies ml-2'>
             <GrFormPrevious size={35} className='sliceBtn' />
           </button>

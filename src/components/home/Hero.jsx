@@ -2,6 +2,7 @@ import { Title } from '../ui/Title'
 // icons
 import { IoSearch } from 'react-icons/io5'
 import { GrLocation } from 'react-icons/gr'
+import { Button_Primary } from '../ui/Button_Primary'
 
 export const Hero = () => {
   return (
@@ -34,7 +35,7 @@ export const Hero = () => {
                 />
               </div>
               <div className='absolute h-full right-0 flex items-center'>
-                <button className='h-full px-11 md:px-16 text-white font-bold bg-green_primary  rounded-full'>Поиск</button>
+                <Button_Primary className='h-full px-11 md:px-16 text-white rounded-full'>Поиск</Button_Primary>
               </div>
             </div>
           </form>

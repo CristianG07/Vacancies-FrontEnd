@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { decoration_bg, decoration_bg2, logo } from '../../utils/image'
 import CountUp from 'react-countup'
 

@@ -18,7 +18,7 @@ export const nav_links = [
   { text: 'О компании', link: '/About' },
   { text: 'Вакансии', link: '/vacancies' },
   { text: 'Услуги', link: '/services' },
-  { text: 'Контакты', link: '/contacts' }
+  { text: 'Контакты', link: '/contact' }
 ]
 
 export const nav_icons = [{ icon: bell }, { icon: mail }, { icon: account }]
@@ -62,6 +62,20 @@ export const footer_contact = [
 ]
 
 export const card_vacancies = [
+  {
+    img: card_img,
+    title: 'Системный администратор',
+    location: { text: 'Местоположение', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    img: card_img,
+    title: 'Системный администратор',
+    location: { text: 'Местоположение', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
   {
     img: card_img,
     title: 'Системный администратор',

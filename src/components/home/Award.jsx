@@ -11,7 +11,7 @@ export const Award = () => {
     {img: award_image},
   ]
   return (
-    <section className="bg-green_footer space-y-16 pb-10 pt-7">
+    <section className="bg-green_footer space-y-10 pb-10 pt-7">
       <div className='text-center'>
         <Title>Наши награды</Title>
       </div>

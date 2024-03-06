@@ -9,14 +9,14 @@ export const GaleryAbout = () => {
   return (
     <section className='container_sections'>
       <div className=' max-w-[20.9375rem] md:max-w-[31.25rem] mx-auto text-center font-montserrat font-medium'>
-        <h4 className='mt-6 mb-10 lg:mt-10 ld:mb-20 text-lg text-balance md:text-wrap'>
-          <span className='w-10 inline-block'>
+        <h4 className='mt-6 mb-10 lg:mt-10 ld:mb-20 text-lg md:text-wrap'>
+          <span className='w-11 inline-block'>
             <img src={logo} alt='logo' />
           </span>{' '}
           - это одна из лучших компаний по помощи в трудоустройстве за границей
         </h4>
       </div>
-      <div className='grid max-w-full md:max-w-[80%] lg:max-w-full mx-auto grid-cols-1 lg:grid-cols-3 gap-6 text-white font-semibold'>
+      <div className='responsive_cols text-white font-semibold'>
         {galery_about.map((galery) => (
           <div key={galery.text} className='galery'>
             <img className='galery_img' src={galery.img} alt={galery.text} loading='lazy' />

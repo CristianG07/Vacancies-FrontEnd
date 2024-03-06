@@ -21,7 +21,10 @@ export const Sidebar = ({ props }) => {
           <ul className='space-y-2 pb-2 text-nowrap font-montserrat font-medium text-dark_blue text-center'>
             {nav_links.map((nav) => (
               <li key={nav.text}>
-                <NavLink onClick={() => setIsOpenSidebar(false)} to={nav.link} className='hover_links'>
+                <NavLink onClick={() => setIsOpenSidebar(false)} to={nav.link} 
+                className={({ isActive }) =>
+                  `${isActive && "text-green_primary"} text-dark_blue hover_links`
+                }>
                   {nav.text}
                 </NavLink>
               </li>

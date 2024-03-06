@@ -61,8 +61,8 @@ export const Reviews = () => {
   ]
   return (
     <section className='pb-16 lg:pt-16 w-full max-w-[83rem] mx-auto'>
-      <div className='text-center my-12'>
-        <Title className='text-2xl md:text-3xl'>Популярные вакансии</Title>
+      <div className='text-center mb-10'>
+        <Title className='text-2xl md:text-3xl'>Отзывы</Title>
       </div>
       <div className='relative px-0 lg:px-12'>
         <Swiper
@@ -87,17 +87,17 @@ export const Reviews = () => {
           }}
         >
           {reviews.map((review, i) => (
-            <SwiperSlide key={i} className='mb-11 px-5 md:px-3 lg:px-0'>
+            <SwiperSlide key={i} className='mb-11 px-3 lg:px-0'>
               <CardReviews {...review} />
             </SwiperSlide>
           ))}
         </Swiper>
         <div className='hidden absolute top-0 left-0 w-full h-full lg:flex justify-between items-center'>
-          <button className='button-prev-review ml-0.5'>
-            <GrFormPrevious size={35} className='sliceBtn' />
+          <button className='button-prev-review'>
+            <GrFormPrevious size={35} className='sliceBtn ml-1' />
           </button>
-          <button className='button-next-review mr-0.5'>
-            <GrFormNext size={35} className='sliceBtn' />
+          <button className='button-next-review'>
+            <GrFormNext size={35} className='sliceBtn mr-1' />
           </button>
         </div>
       </div>

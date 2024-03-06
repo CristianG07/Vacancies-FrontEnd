@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink, useParams } from 'react-router-dom'
 // data
 import { nav_icons, nav_links } from '../../utils/data'
 // images
 import { burgermenu, logo } from '../../utils/image'
 import { Sidebar } from '../../components/header/Sidebar'
-import OutsideClickHandler from 'react-outside-click-handler/build/OutsideClickHandler'
+import OutsideClickHandler from 'react-outside-click-handler'
 
 export const Header = () => {
+  const { vacancyId } = useParams()
   const [isOpenSidebar, setIsOpenSidebar] = useState(false)
 
   return (
@@ -20,9 +21,9 @@ export const Header = () => {
           >
             <img src={burgermenu} alt='bars' />
           </button>
-          <div className='w-28 mx-auto lg:mx-0 lg:w-fit'>
+          <Link to='/' className='w-28 mx-auto lg:mx-0 lg:w-fit'>
             <img src={logo} alt='logo' />
-          </div>
+          </Link>
           <ul className='show_lg-flex text-nowrap gap-8 items-center font-montserrat font-medium text-dark_blue'>
             {nav_links.map((nav) => (
               <li key={nav.text}>

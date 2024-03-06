@@ -18,8 +18,8 @@ export const Selection = () => {
             </p>
           </div>
           <div className='flex justify-between lg:justify-start gap-6'>
-            <Button_Primary className='md:px-8 text-white'>Подробнее</Button_Primary>
-            <Button_Primary className='bg-transparent border-2 border-green_primary text-green_primary'>Связаться с нами</Button_Primary>
+            <Button_Primary className='px-8 text-white'>Подробнее</Button_Primary>
+            <Button_Primary className='bg-transparent hover:bg-green_primary hover:text-white border-2 border-green_primary text-green_primary px-4 md:px-5'>Связаться с нами</Button_Primary>
           </div>
         </div>
         <div>
