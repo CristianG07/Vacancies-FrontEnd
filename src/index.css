@@ -83,4 +83,7 @@ body {
   .show_lg-block {
     @apply hidden lg:block;
   }
+  .bg_hero {
+    background-image: url('./assets/img/hero.jpg');
+  }
 }
