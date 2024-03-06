@@ -22,7 +22,7 @@ export const CustomSelect = ({options, defaulValue}) => {
           isOpen
             ? 'border border-green_secondary rounded-t-2xl justify-between'
             : 'border border-transparent rounded-full'
-        } bg-light_gray text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 flex items-center w-full p-2.5 cursor-pointer bg-ligth_gray select-none px-5`}
+        } bg-light_gray text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 flex items-center w-full py-2.5 cursor-pointer bg-ligth_gray select-none px-5 min-w-36`}
         onClick={toggleOptions}
       >
         {selectedOption || defaulValue}
@@ -31,7 +31,7 @@ export const CustomSelect = ({options, defaulValue}) => {
         </div>
       </div>
       {isOpen && (
-        <div className='absolute z-10 w-full bg-ligth_gray border border-green_secondary rounded-b-2xl shadow-md pt-2 pb-5'>
+        <div className='absolute z-10 w-full bg-ligth_gray border border-green_secondary rounded-b-2xl shadow-md pt-2 pb-5 min-w-36'>
           {options.map((option, index) => (
             <div
               key={index}
