@@ -6,7 +6,7 @@ import { Button_Primary } from '../ui/Button_Primary'
 
 export const Hero = () => {
   return (
-    <section className='bg-transparent bg-white lg:bg-hero bg-cover bg-no-repeat bg-center h-[35vh] lg:h-[43vh] font-montserrat'>
+    <section className='bg-transparent bg-white lg:bg-[url("../../assets/img/hero.jpg")] bg-cover bg-no-repeat bg-center h-[35vh] lg:h-[43vh] font-montserrat'>
       <div className='flex justify-center items-center h-full'>
         <div className='w-[90%] lg:w-[60%]'>
           <div className='py-8 hidden lg:block text-center'>
