@@ -25,7 +25,7 @@ export const Award = () => {
         {awards.map((award, i) => (
           <SwiperSlide key={i}>
             <div>
-              <img className="aspect-[401/224]" src={award.img} alt="awards_images" loading="lazy" />
+              <img className="aspect-[401/224]" src={award.img} alt="awards_images" />
             </div>
           </SwiperSlide>
         ))}

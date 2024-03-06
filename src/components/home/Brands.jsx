@@ -39,7 +39,7 @@ export const Brands = () => {
           <SwiperSlide key={i}>
             <div className='brands'>
               <div>
-                <img src={brand.img} alt='brands_images' loading="lazy" />
+                <img src={brand.img} alt='brands_images' />
               </div>
             </div>
           </SwiperSlide>
