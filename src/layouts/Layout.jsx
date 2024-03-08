@@ -4,28 +4,35 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './header/Header'
 import { Footer } from './footer/Footer'
 import { Loader } from '../components/loader/Loader'
+// data
+import { STATUS } from '../utils/status'
+// redux
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchVacancies } from '../redux/vacancies/vacancySlice'
 
 const Layout = () => {
-  // const location = useLocation()
-  // const [loading, setLoading] = useState(true)
+  const dispatch = useDispatch()
+  const location = useLocation()
+  const { status: productStatus } = useSelector((state) => state.vacancy)
 
-  // useEffect(() => {
-  //   setLoading(true)
+  useEffect(() => {
+    dispatch(fetchVacancies())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname, dispatch])
 
-  //   const timer = setTimeout(() => {
-  //     setLoading(false)
-  //   }, 2000)
-
-  //   return () => clearTimeout(timer)
-  // }, [location.pathname])
+  const isLoading = productStatus === STATUS.LOADING
+  // const isError = productStatus === STATUS.ERROR || categoryStatus === STATUS.ERROR
 
   return (
     <>
       <Header />
-      <Suspense fallback={<Loader />}>
-        <Outlet />
-        <Footer />
-      </Suspense>
+      {isLoading && <Loader />}
+      {!isLoading && (
+        <>
+          <Outlet />
+          <Footer />
+        </>
+      )}
     </>
   )
 }

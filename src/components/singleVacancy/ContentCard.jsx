@@ -1,80 +1,54 @@
 import { Link } from 'react-router-dom'
-import {
-  arrow_left,
-  circle_dollar,
-  clock,
-  map_pin,
-  single_img,
-  single_img_mobile
-} from '../../utils/image'
+import { arrow_left } from '../../utils/image'
 import { CardContact } from '../contact/CardContact'
 import { Button_Primary } from '../ui/Button_Primary'
 import { Input } from '../ui/Input'
 import { Title } from '../ui/Title'
 
-export const ContentCard = () => {
-  const single_vacancy = {
-    img: single_img,
-    img_mobile: single_img_mobile,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
-    time: { text: 'Пн - Пт', icon: clock }
-  }
+export const ContentCard = ({ img, title, location, dollar, time }) => {
 
   return (
     <section className='container_sections pb-0'>
-      <Link to='/' className='flex items-center gap-2 text-lg font-bold lg:ml-6 my-10 mt-12 group'>
+      <Link
+        to='/'
+        className='flex items-center gap-2 text-lg font-bold lg:ml-6 my-10 mt-12 group'
+      >
         <div className='group-hover:-translate-x-2 transition-transform duration-500'>
           <img src={arrow_left} alt='arrow_left' />
         </div>
         <span>Вернуться к вакансиям</span>
       </Link>
       <div className='flex flex-col md:flex-row justify-around gap-4'>
-        <div className='flex flex-col justify-center lg:w-[55%]'>
+        <div className='flex flex-col justify-center lg:w-[55%] rounded-[2.5rem] overflow-hidden'>
           <div>
-            <div className='hidden lg:block'>
-              <img src={single_vacancy.img} alt='' />
-            </div>
-            <div className='lg:hidden'>
-              <img src={single_vacancy.img_mobile} alt='' />
+            <div className='h-56'>
+              <img className='object-center' src={img} alt='' />
             </div>
           </div>
-          <div className='flex justify-items-center w-full h-full px-4 text-text_card bg-ligth_gray rounded-b-[2.5rem]'>
+          <div className='grid h-full px-4 text-text_card bg-ligth_gray'>
             <div className='flex flex-col lg:flex-row lg:items-center w-full gap-4 lg:space-x-4 font-montserrat text-xs sm:text-sm px-4 pt-4 pb-7'>
               <div>
-                <Title className='text-base sm:text-lg'>
-                  {single_vacancy.title}
-                </Title>
+                <Title className='text-base sm:text-lg'>{title}</Title>
               </div>
-              <div className='hidden md:block h-[2px] w-full lg:w-[1.5px] lg:h-[75%] bg-gradient-to-r lg:bg-gradient-to-b to-transparent via-[#575757] from-transparent' />
+              <div className='hidden md:block h-[2px] w-full lg:w-[1.5px] lg:h-[95%] bg-gradient-to-r lg:bg-gradient-to-b to-transparent via-[#575757] from-transparent' />
               <div className='space-y-2 lg:pl-4'>
                 <div className='flex items-center gap-2'>
                   <div>
-                    <img
-                      src={single_vacancy.location.icon}
-                      alt={single_vacancy.location.text}
-                    />
+                    <img src={location.icon} alt={location.text} />
                   </div>
-                  <p>{single_vacancy.location.text}</p>
+                  <p>{location.text}</p>
                 </div>
                 <div className='flex items-center gap-2'>
                   <div>
-                    <img
-                      src={single_vacancy.dollar.icon}
-                      alt={single_vacancy.dollar.text}
-                    />
+                    <img src={dollar.icon} alt={dollar.text} />
                   </div>
-                  <p>{single_vacancy.dollar.text}</p>
+                  <p>{dollar.text}</p>
                 </div>
                 <div className='flex items-center gap-2'>
                   <div>
-                    <img
-                      src={single_vacancy.time.icon}
-                      alt={single_vacancy.time.text}
-                    />
+                    <img src={time.icon} alt={time.text} />
                   </div>
-                  <p>{single_vacancy.time.text}</p>
+                  <p>{time.text}</p>
                 </div>
               </div>
             </div>

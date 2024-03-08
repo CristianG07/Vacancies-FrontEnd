@@ -63,58 +63,162 @@ export const footer_contact = [
 
 export const card_vacancies = [
   {
+    id:'MNCXZ',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'уеб разработчик',
+    location: { text: 'Колумбия', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'WUJBA',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'бдителен',
+    location: { text: 'Испания', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'KRHWP',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'уеб разработчик',
+    location: { text: 'Колумбия', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'WUYS',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'бдителен',
+    location: { text: 'САЩ', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'EWGRY',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'брояч',
+    location: { text: 'Испания', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'3GKLSJ',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'бдителен',
+    location: { text: 'Колумбия', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'PP43',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'уеб разработчик',
+    location: { text: 'Аржентина', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
+    id:'LKWH',
     img: card_img,
-    title: 'Системный администратор',
-    location: { text: 'Местоположение', icon: map_pin },
+    title: 'бдителен',
+    location: { text: 'САЩ', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'MSJEFRH',
+    img: card_img,
+    title: 'брояч',
+    location: { text: 'Аржентина', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'ETIOI',
+    img: card_img,
+    title: 'бдителен',
+    location: { text: 'Колумбия', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'LNEU',
+    img: card_img,
+    title: 'брояч',
+    location: { text: 'Аржентина', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'SFALS',
+    img: card_img,
+    title: 'бдителен',
+    location: { text: 'Колумбия', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'I35IU',
+    img: card_img,
+    title: 'брояч',
+    location: { text: 'Колумбия', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'AKH',
+    img: card_img,
+    title: 'бизнес администратор',
+    location: { text: 'Испания', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'ZISJO',
+    img: card_img,
+    title: 'брояч',
+    location: { text: 'Аржентина', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'LKNDA',
+    img: card_img,
+    title: 'уеб разработчик',
+    location: { text: 'Испания', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'OIJTR',
+    img: card_img,
+    title: 'бизнес администратор',
+    location: { text: 'САЩ', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'EW4NO',
+    img: card_img,
+    title: 'брояч',
+    location: { text: 'Аржентина', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'GDKK',
+    img: card_img,
+    title: 'бизнес администратор',
+    location: { text: 'САЩ', icon: map_pin },
+    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    time: { text: 'Пн - Пт', icon: clock }
+  },
+  {
+    id:'JAIE',
+    img: card_img,
+    title: 'уеб разработчик',
+    location: { text: 'САЩ', icon: map_pin },
     dollar: { text: '2000 - 5000$', icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },

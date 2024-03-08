@@ -8,7 +8,7 @@ import { Sidebar } from '../../components/header/Sidebar'
 import OutsideClickHandler from 'react-outside-click-handler'
 
 export const Header = () => {
-  const { vacancyId } = useParams()
+  // const { vacancyId } = useParams()
   const [isOpenSidebar, setIsOpenSidebar] = useState(false)
 
   return (
