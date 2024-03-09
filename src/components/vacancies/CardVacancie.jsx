@@ -14,7 +14,7 @@ export const CardVacancie = () => {
   }
 
   return (
-    <section className='container_sections w-full pb-0'>
+    <section className='container_sections w-full pb-10 lg:pb-0'>
       <div className='text-center mb-12'>
         <Title className='text-2xl md:text-3xl'>Вакансии</Title>
       </div>

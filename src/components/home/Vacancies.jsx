@@ -36,7 +36,7 @@ export const Vacancies = () => {
             }
           }}
         >
-          {vacancies.map((vacancy) => (
+          {vacancies.slice(0, 8).map((vacancy) => (
             <SwiperSlide key={vacancy.id} className='mb-11'>
               <CardVacancies {...vacancy} />
             </SwiperSlide>

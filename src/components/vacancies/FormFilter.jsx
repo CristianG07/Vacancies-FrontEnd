@@ -53,7 +53,7 @@ export const FormFilter = () => {
           </div>
         </div>
         <div className='md:h-14'>
-          <div className='text-center mb-3 md:mb-2 lg:mb-1 select-none'>
+          <div className='text-center mb-3 md:mb-1 select-none'>
             <p>Зарплата</p>
           </div>
           <PriceRange min={0} max={5000} onChange={handlePriceRangeChange} />
