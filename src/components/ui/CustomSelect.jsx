@@ -2,7 +2,7 @@ import { useState } from "react"
 import { arrow_down } from '../../utils/image'
 
 
-export const CustomSelect = ({options, defaulValue}) => {
+export const CustomSelect = ({options, defaulValue, onSelectChange }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null)
 
@@ -13,6 +13,7 @@ export const CustomSelect = ({options, defaulValue}) => {
   const handleOptionSelect = (option) => {
     setSelectedOption(option)
     setIsOpen(false)
+    onSelectChange(option)
   }
 
   return (

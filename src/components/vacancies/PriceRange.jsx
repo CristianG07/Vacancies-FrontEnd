@@ -39,7 +39,7 @@ export const PriceRange = ({ min, max, onChange }) => {
   // Get min and max values when their state changes
   useEffect(() => {
     onChange({ min: minVal, max: maxVal })
-  }, [minVal, maxVal, onChange])
+  }, [minVal, maxVal])
 
   return (
     <div className='w-full'>

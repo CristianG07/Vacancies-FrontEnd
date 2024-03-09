@@ -60,7 +60,7 @@ export const WorkPlaces = () => {
                     {service.price}
                   </span>
                 </div>
-                <p className='font-montserrat max-w-full lg:max-w-[90%] mb-7 mt-4 lg:my-0'>
+                <p className='font-montserrat max-w-full lg:max-w-[90%] mb-6 mt-3'>
                   {service.desc}
                 </p>
                 <div className='w-fit mx-auto'>

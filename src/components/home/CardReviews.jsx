@@ -4,10 +4,10 @@ export const CardReviews = ({img, title, subtitle, date, desc, btntext}) => {
   return (
     <div className='relative h-[21.25rem] rounded-3xl overflow-hidden text-white'>
       <img className='absolute' src={img} alt={title} />
-      <div className='absolute px-6 py-8 flex flex-col justify-between h-full'>
+      <div className='absolute px-5 py-8 flex flex-col justify-between h-full'>
         <div className='flex justify-between items-center gap-2.5 text-nowrap'>
           <span className='text-base md:text-lg font-montserrat'>{date}</span>
-          <Button_Primary className='px-3 py-3'>
+          <Button_Primary className='px-3 py-3 text-nowrap'>
             {btntext}
           </Button_Primary>
         </div>

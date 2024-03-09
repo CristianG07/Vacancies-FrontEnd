@@ -42,7 +42,7 @@ export const ContentCard = ({ img, title, location, dollar, time }) => {
                   <div>
                     <img src={dollar.icon} alt={dollar.text} />
                   </div>
-                  <p>{dollar.text}</p>
+                  <p>{`${dollar.min} - ${dollar.max}$`}</p>
                 </div>
                 <div className='flex items-center gap-2'>
                   <div>

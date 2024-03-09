@@ -5,6 +5,9 @@ import { card_vacancies } from '../../utils/data'
 
 const initialState = {
   data: card_vacancies,
+  searchTitle: '',
+  searchLocation: '',
+  
   status: STATUS.IDLE
 }
 
@@ -15,40 +18,78 @@ export const searchSlice = createSlice({
     setSearch: (state, action) => {
       state.data = action.payload
     },
+    setSearchTitle: (state, action) => {
+      state.searchTitle = action.payload
+    },
+    setSearchLocation: (state, action) => {
+      state.searchLocation = action.payload
+    },
+    clearSearchData: (state) => {
+      state.searchTitle = ''
+      state.searchLocation = ''
+    },
     setStatus: (state, { payload }) => {
       state.status = payload
     }
   }
 })
 
-export const { setSearch, setStatus } = searchSlice.actions
+export const { setSearch, setSearchTitle, setSearchLocation, setStatus, clearSearchData } =
+  searchSlice.actions
 export default searchSlice.reducer
 
 export const fetchVacanciesBySearch =
-  (searchTitle, searchLocation) => async (dispatch) => {
+  (priceRange) => async (dispatch, getState) => {
     dispatch(setStatus(STATUS.LOADING))
 
     try {
-      let filteredVacancies = card_vacancies
+      const { searchTitle, searchLocation } = getState().search
+      console.log(searchTitle, searchLocation)
+      const filteredVacanciesMap = {}
 
       if (searchTitle && searchLocation) {
-        let title = card_vacancies.filter((vacancy) =>
-          vacancy.title.includes(searchTitle)
-        )
-        let location = card_vacancies.filter((vacancy) =>
-          vacancy.location.text.includes(searchLocation)
-        )
-
-        filteredVacancies = [...title, ...location]
+        card_vacancies.forEach((vacancy) => {
+          if (
+            vacancy.title.includes(searchTitle) &&
+            vacancy.location.text.includes(searchLocation) &&
+            vacancy.dollar.min <= priceRange.min &&
+            vacancy.dollar.max >= priceRange.max
+          ) {
+            filteredVacanciesMap[vacancy.id] = vacancy
+          }
+        })
       } else if (searchTitle) {
-        filteredVacancies = card_vacancies.filter((vacancy) =>
-          vacancy.title.includes(searchTitle)
-        )
+        card_vacancies.forEach((vacancy) => {
+          if (
+            vacancy.title.includes(searchTitle) &&
+            vacancy.dollar.min <= priceRange.min &&
+            vacancy.dollar.max >= priceRange.max
+          ) {
+            filteredVacanciesMap[vacancy.id] = vacancy
+          }
+        })
       } else if (searchLocation) {
-        filteredVacancies = card_vacancies.filter((vacancy) =>
-          vacancy.location.text.includes(searchLocation)
-        )
+        card_vacancies.forEach((vacancy) => {
+          if (
+            vacancy.location.text.includes(searchLocation) &&
+            vacancy.dollar.min <= priceRange.min &&
+            vacancy.dollar.max >= priceRange.max
+          ) {
+            filteredVacanciesMap[vacancy.id] = vacancy
+          }
+        })
+      } else {
+        card_vacancies.forEach((vacancy) => {
+          if (
+            vacancy.dollar.min <= priceRange.min &&
+            vacancy.dollar.max >= priceRange.max
+          ) {
+            filteredVacanciesMap[vacancy.id] = vacancy
+          }
+        })
       }
+
+      const filteredVacancies = Object.values(filteredVacanciesMap)
 
       if (filteredVacancies.length === 0) {
         dispatch(setSearch([]))
@@ -58,6 +99,7 @@ export const fetchVacanciesBySearch =
 
       dispatch(setSearch(filteredVacancies))
       wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
+      wait(1500).then(() => dispatch(clearSearchData()))
     } catch (error) {
       wait(1000).then(() => dispatch(setStatus(STATUS.ERROR)))
     }

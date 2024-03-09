@@ -65,65 +65,65 @@ export const card_vacancies = [
   {
     id:'MNCXZ',
     img: card_img,
-    title: 'уеб разработчик',
-    location: { text: 'Колумбия', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Строитель',
+    location: { text: 'Польша', icon: map_pin },
+    dollar: { min: 1000, max: 2000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'WUJBA',
     img: card_img,
-    title: 'бдителен',
-    location: { text: 'Испания', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Водитель',
+    location: { text: 'Германия', icon: map_pin },
+    dollar: { min: 2000, max: 4000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'KRHWP',
     img: card_img,
-    title: 'уеб разработчик',
-    location: { text: 'Колумбия', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Строитель',
+    location: { text: 'Польша', icon: map_pin },
+    dollar: { min: 0, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'WUYS',
     img: card_img,
-    title: 'бдителен',
-    location: { text: 'САЩ', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Водитель',
+    location: { text: 'Нидерланды', icon: map_pin },
+    dollar: { min: 1500, max: 3000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'EWGRY',
     img: card_img,
     title: 'брояч',
-    location: { text: 'Испания', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    location: { text: 'Германия', icon: map_pin },
+    dollar: { min: 3500, max: 4000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'3GKLSJ',
     img: card_img,
-    title: 'бдителен',
-    location: { text: 'Колумбия', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Водитель',
+    location: { text: 'Польша', icon: map_pin },
+    dollar: { min: 0, max: 500, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'PP43',
     img: card_img,
-    title: 'уеб разработчик',
+    title: 'Строитель',
     location: { text: 'Аржентина', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    dollar: { min: 1000, max: 2000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'LKWH',
     img: card_img,
-    title: 'бдителен',
-    location: { text: 'САЩ', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Водитель',
+    location: { text: 'Нидерланды', icon: map_pin },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -131,15 +131,15 @@ export const card_vacancies = [
     img: card_img,
     title: 'брояч',
     location: { text: 'Аржентина', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    dollar: { min: 0, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'ETIOI',
     img: card_img,
-    title: 'бдителен',
-    location: { text: 'Колумбия', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Водитель',
+    location: { text: 'Польша', icon: map_pin },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -147,31 +147,31 @@ export const card_vacancies = [
     img: card_img,
     title: 'брояч',
     location: { text: 'Аржентина', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    dollar: { min: 4500, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'SFALS',
     img: card_img,
-    title: 'бдителен',
-    location: { text: 'Колумбия', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Водитель',
+    location: { text: 'Польша', icon: map_pin },
+    dollar: { min: 2600, max: 4000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'I35IU',
     img: card_img,
     title: 'брояч',
-    location: { text: 'Колумбия', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    location: { text: 'Польша', icon: map_pin },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'AKH',
     img: card_img,
     title: 'бизнес администратор',
-    location: { text: 'Испания', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    location: { text: 'Германия', icon: map_pin },
+    dollar: { min: 0, max: 4000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -179,23 +179,23 @@ export const card_vacancies = [
     img: card_img,
     title: 'брояч',
     location: { text: 'Аржентина', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'LKNDA',
     img: card_img,
-    title: 'уеб разработчик',
-    location: { text: 'Испания', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Строитель',
+    location: { text: 'Германия', icon: map_pin },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'OIJTR',
     img: card_img,
     title: 'бизнес администратор',
-    location: { text: 'САЩ', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    location: { text: 'Нидерланды', icon: map_pin },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -203,23 +203,23 @@ export const card_vacancies = [
     img: card_img,
     title: 'брояч',
     location: { text: 'Аржентина', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    dollar: { min: 0, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'GDKK',
     img: card_img,
     title: 'бизнес администратор',
-    location: { text: 'САЩ', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    location: { text: 'Нидерланды', icon: map_pin },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
     id:'JAIE',
     img: card_img,
-    title: 'уеб разработчик',
-    location: { text: 'САЩ', icon: map_pin },
-    dollar: { text: '2000 - 5000$', icon: circle_dollar },
+    title: 'Строитель',
+    location: { text: 'Нидерланды', icon: map_pin },
+    dollar: { min: 0, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
 ]
