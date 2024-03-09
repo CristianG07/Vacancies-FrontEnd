@@ -169,7 +169,7 @@ export const card_vacancies = [
   {
     id:'AKH',
     img: card_img,
-    title: 'бизнес администратор',
+    title: 'Повар',
     location: { text: 'Германия', icon: map_pin },
     dollar: { min: 0, max: 4000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
@@ -193,7 +193,7 @@ export const card_vacancies = [
   {
     id:'OIJTR',
     img: card_img,
-    title: 'бизнес администратор',
+    title: 'Повар',
     location: { text: 'Нидерланды', icon: map_pin },
     dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
@@ -209,7 +209,7 @@ export const card_vacancies = [
   {
     id:'GDKK',
     img: card_img,
-    title: 'бизнес администратор',
+    title: 'Повар',
     location: { text: 'Нидерланды', icon: map_pin },
     dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
