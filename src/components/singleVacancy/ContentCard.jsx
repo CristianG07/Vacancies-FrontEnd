@@ -10,7 +10,7 @@ export const ContentCard = ({ img, title, location, dollar, time }) => {
   return (
     <section className='container_sections pb-0'>
       <Link
-        to='/'
+        to='/vacancies'
         className='flex items-center gap-2 text-lg font-bold lg:ml-6 my-10 mt-12 group'
       >
         <div className='group-hover:-translate-x-2 transition-transform duration-500'>
@@ -42,7 +42,7 @@ export const ContentCard = ({ img, title, location, dollar, time }) => {
                   <div>
                     <img src={dollar.icon} alt={dollar.text} />
                   </div>
-                  <p>{`${dollar.min} - ${dollar.max}$`}</p>
+                  <p>{`${dollar.min} +`}</p>
                 </div>
                 <div className='flex items-center gap-2'>
                   <div>

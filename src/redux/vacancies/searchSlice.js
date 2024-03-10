@@ -7,7 +7,7 @@ const initialState = {
   data: card_vacancies,
   searchTitle: '',
   searchLocation: '',
-  
+  priceRange: { min: 0, max: 5000 },
   status: STATUS.IDLE
 }
 
@@ -24,9 +24,8 @@ export const searchSlice = createSlice({
     setSearchLocation: (state, action) => {
       state.searchLocation = action.payload
     },
-    clearSearchData: (state) => {
-      state.searchTitle = ''
-      state.searchLocation = ''
+    setPriceRange: (state, action) => { // Agrega una acción para actualizar el rango de precios
+      state.priceRange = action.payload;
     },
     setStatus: (state, { payload }) => {
       state.status = payload
@@ -34,17 +33,17 @@ export const searchSlice = createSlice({
   }
 })
 
-export const { setSearch, setSearchTitle, setSearchLocation, setStatus, clearSearchData } =
+export const { setSearch, setSearchTitle, setSearchLocation, setPriceRange, setStatus } =
   searchSlice.actions
 export default searchSlice.reducer
 
 export const fetchVacanciesBySearch =
-  (priceRange) => async (dispatch, getState) => {
+  () => async (dispatch, getState) => {
     dispatch(setStatus(STATUS.LOADING))
 
     try {
-      const { searchTitle, searchLocation } = getState().search
-      console.log(searchTitle, searchLocation)
+      const { searchTitle, searchLocation, priceRange } = getState().search
+      console.log(searchTitle, searchLocation, priceRange )
       const filteredVacanciesMap = {}
 
       if (searchTitle && searchLocation) {
@@ -95,7 +94,6 @@ export const fetchVacanciesBySearch =
 
       dispatch(setSearch(filteredVacancies))
       wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
-      wait(1500).then(() => dispatch(clearSearchData()))
     } catch (error) {
       wait(1000).then(() => dispatch(setStatus(STATUS.ERROR)))
     }

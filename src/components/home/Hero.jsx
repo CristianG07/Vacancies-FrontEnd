@@ -29,7 +29,6 @@ export const Hero = () => {
     navigate('vacancies');
   };
 
-
   return (
     <section className='bg-transparent bg-white lg:bg_hero bg-cover bg-no-repeat bg-center h-[35vh] lg:h-[43vh] font-montserrat'>
       <div className='flex justify-center items-center h-full'>

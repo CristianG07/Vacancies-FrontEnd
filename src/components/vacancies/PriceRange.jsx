@@ -50,7 +50,7 @@ export const PriceRange = ({ min, max, onChange }) => {
           max={max}
           value={minVal}
           onChange={(event) => {
-            const value = Math.min(Number(event.target.value), maxVal - 1)
+            const value = Math.min(Number(event.target.value))
             setMinVal(value)
             minValRef.current = value
           }}
