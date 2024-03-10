@@ -67,7 +67,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Строитель',
     location: { text: 'Польша', icon: map_pin },
-    dollar: { min: 1000, max: 2000, icon: circle_dollar },
+    dollar: { min: 1000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -75,7 +75,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Водитель',
     location: { text: 'Германия', icon: map_pin },
-    dollar: { min: 2000, max: 4000, icon: circle_dollar },
+    dollar: { min: 2000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -91,7 +91,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Водитель',
     location: { text: 'Нидерланды', icon: map_pin },
-    dollar: { min: 1500, max: 3000, icon: circle_dollar },
+    dollar: { min: 1500, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -99,7 +99,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'брояч',
     location: { text: 'Германия', icon: map_pin },
-    dollar: { min: 3500, max: 4000, icon: circle_dollar },
+    dollar: { min: 3500, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -107,7 +107,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Водитель',
     location: { text: 'Польша', icon: map_pin },
-    dollar: { min: 0, max: 500, icon: circle_dollar },
+    dollar: { min: 0, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -115,7 +115,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Строитель',
     location: { text: 'Аржентина', icon: map_pin },
-    dollar: { min: 1000, max: 2000, icon: circle_dollar },
+    dollar: { min: 1000, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -155,7 +155,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Водитель',
     location: { text: 'Польша', icon: map_pin },
-    dollar: { min: 2600, max: 4000, icon: circle_dollar },
+    dollar: { min: 2600, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
@@ -171,7 +171,7 @@ export const card_vacancies = [
     img: card_img,
     title: 'Повар',
     location: { text: 'Германия', icon: map_pin },
-    dollar: { min: 0, max: 4000, icon: circle_dollar },
+    dollar: { min: 0, max: 5000, icon: circle_dollar },
     time: { text: 'Пн - Пт', icon: clock }
   },
   {
