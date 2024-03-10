@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, NavLink, useParams } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 // data
 import { nav_icons, nav_links } from '../../utils/data'
 // images
@@ -8,7 +8,6 @@ import { Sidebar } from '../../components/header/Sidebar'
 import OutsideClickHandler from 'react-outside-click-handler'
 
 export const Header = () => {
-  // const { vacancyId } = useParams()
   const [isOpenSidebar, setIsOpenSidebar] = useState(false)
 
   return (

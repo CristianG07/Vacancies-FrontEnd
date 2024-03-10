@@ -24,7 +24,7 @@ export const CardVacancies = ({ id, img, title, location, dollar, time }) => {
             <div>
               <img src={dollar.icon} alt={dollar.text} />
             </div>
-            <p>{`${dollar.min} - ${dollar.max}$`}</p>
+            <p>{`${dollar.min} +`}</p>
           </div>
           <div className='flex items-center gap-1'>
             <div>

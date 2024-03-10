@@ -75,7 +75,7 @@ export const PriceRange = ({ min, max, onChange }) => {
         <div className='absolute rounded h-0.5 bg-[#D9E3D8] w-full' />
         <div ref={range} className='absolute h-0.5 rounded bg-[#D9E3D8]' />
         <div className='absolute mt-3.5 left-0 select-none'>{minVal}$</div>
-        <div className='absolute mt-3.5 -right-3 select-none'>{maxVal}$</div>
+        {/* <div className='absolute mt-3.5 -right-3 select-none'>{maxVal}$</div> */}
       </div>
     </div>
   )

@@ -19,6 +19,7 @@
 }
 
 .thumb--right {
+  display: none;
   z-index: 4;
 }
 

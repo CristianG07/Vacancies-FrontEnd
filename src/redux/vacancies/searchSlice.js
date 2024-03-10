@@ -50,10 +50,9 @@ export const fetchVacanciesBySearch =
       if (searchTitle && searchLocation) {
         card_vacancies.forEach((vacancy) => {
           if (
-            vacancy.title.includes(searchTitle) &&
-            vacancy.location.text.includes(searchLocation) &&
-            vacancy.dollar.min <= priceRange.min &&
-            vacancy.dollar.max >= priceRange.max
+            vacancy.title.toLowerCase().includes(searchTitle.toLowerCase()) &&
+            vacancy.location.text.toLowerCase().includes(searchLocation.toLowerCase()) &&
+            vacancy.dollar.min <= priceRange.min
           ) {
             filteredVacanciesMap[vacancy.id] = vacancy
           }
@@ -61,9 +60,8 @@ export const fetchVacanciesBySearch =
       } else if (searchTitle) {
         card_vacancies.forEach((vacancy) => {
           if (
-            vacancy.title.includes(searchTitle) &&
-            vacancy.dollar.min <= priceRange.min &&
-            vacancy.dollar.max >= priceRange.max
+            vacancy.title.toLowerCase().includes(searchTitle.toLowerCase()) &&
+            vacancy.dollar.min <= priceRange.min
           ) {
             filteredVacanciesMap[vacancy.id] = vacancy
           }
@@ -71,9 +69,8 @@ export const fetchVacanciesBySearch =
       } else if (searchLocation) {
         card_vacancies.forEach((vacancy) => {
           if (
-            vacancy.location.text.includes(searchLocation) &&
-            vacancy.dollar.min <= priceRange.min &&
-            vacancy.dollar.max >= priceRange.max
+            vacancy.location.text.toLowerCase().includes(searchLocation.toLowerCase()) &&
+            vacancy.dollar.min <= priceRange.min
           ) {
             filteredVacanciesMap[vacancy.id] = vacancy
           }
@@ -81,8 +78,7 @@ export const fetchVacanciesBySearch =
       } else {
         card_vacancies.forEach((vacancy) => {
           if (
-            vacancy.dollar.min <= priceRange.min &&
-            vacancy.dollar.max >= priceRange.max
+            vacancy.dollar.min <= priceRange.min
           ) {
             filteredVacanciesMap[vacancy.id] = vacancy
           }

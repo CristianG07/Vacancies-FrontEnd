@@ -7,16 +7,21 @@ import {
   setSearchLocation,
   setSearchTitle
 } from '../../redux/vacancies/searchSlice'
+import { card_vacancies } from '../../utils/data'
 
 export const FormFilter = () => {
-  const options1 = ['Польша', 'Германия', 'Нидерланды']
-  const options2 = ['Повар', 'Строитель', 'Водитель']
   const dispatch = useDispatch()
+  const countries = new Set(card_vacancies.map((vacancy) => vacancy.location.text))
+  const vacancies = new Set(card_vacancies.map((vacancy) => vacancy.title))
   const { searchTitle, searchLocation } = useSelector((state) => state.search)
   const [selectedLocation, setSelectedLocation] = useState(searchLocation)
   const [selectedTitle, setSelectedTitle] = useState(searchTitle)
   const [priceRange, setPriceRange] = useState({ min: 0, max: 5000 })
+  
+  const options1 = ['всички страни', ...Array.from(countries)]; // Agrega la opción "todos los países" al principio
+  const options2 = ['всички свободни позиции', ...Array.from(vacancies)]; // Agrega la opción "todas las profesiones" al principio
 
+  
   useEffect(() => {
     dispatch(setSearchLocation(selectedLocation))
     dispatch(setSearchTitle(selectedTitle))
@@ -24,12 +29,12 @@ export const FormFilter = () => {
   }, [dispatch, selectedLocation, selectedTitle, priceRange])
 
   const handleJobTitleChange = (value) => {
-    setSelectedTitle(value)
-  }
+    setSelectedTitle(value === 'всички свободни позиции' ? '' : value); // Si se selecciona "todas las profesiones", establece el valor en blanco
+  };
 
   const handleLocationChange = (value) => {
-    setSelectedLocation(value)
-  }
+    setSelectedLocation(value === 'всички страни' ? '' : value); // Si se selecciona "todos los países", establece el valor en blanco
+  };
 
   const handlePriceRangeChange = ({ min, max }) => {
     setPriceRange({ min, max })
